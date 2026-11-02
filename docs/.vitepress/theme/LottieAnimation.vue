@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { withBase } from 'vitepress'
 
 const props = defineProps<{
   src: string
@@ -14,7 +15,7 @@ onMounted(async () => {
   const { default: lottie } = await import('lottie-web')
   if (disposed || !container.value) return
 
-  const response = await fetch(props.src)
+  const response = await fetch(withBase(props.src))
   const animationData = await response.json()
 
   if (disposed || !container.value) return

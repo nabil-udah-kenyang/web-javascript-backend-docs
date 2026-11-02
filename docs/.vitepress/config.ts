@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'id-ID',
+  base: process.env.GITHUB_ACTIONS ? '/web-javascript-backend-docs/' : '/',
   title: 'JS / TS Backend Notes',
   description: 'Catatan belajar JavaScript, TypeScript, dan fondasi backend Node.js.',
   cleanUrls: true,

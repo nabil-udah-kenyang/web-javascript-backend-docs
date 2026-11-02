@@ -19,33 +19,33 @@ hero:
 <div class="home-marquee" aria-label="Teknologi yang dibahas dalam handbook">
   <div class="home-marquee-track">
     <div class="home-marquee-group">
-      <div class="home-marquee-item"><img src="/logos/javascript.svg" alt="JavaScript" /><span>JavaScript</span></div>
-      <div class="home-marquee-item"><img src="/logos/typescript.svg" alt="TypeScript" /><span>TypeScript</span></div>
-      <div class="home-marquee-item"><img src="/logos/nodedotjs.svg" alt="Node.js" /><span>Node.js</span></div>
-      <div class="home-marquee-item"><img src="/logos/express.svg" alt="Express" /><span>Express</span></div>
-      <div class="home-marquee-item"><img src="/logos/nestjs.svg" alt="NestJS" /><span>NestJS</span></div>
+      <div class="home-marquee-item"><img src="./logos/javascript.svg" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="home-marquee-item"><img src="./logos/typescript.svg" alt="TypeScript" /><span>TypeScript</span></div>
+      <div class="home-marquee-item"><img src="./logos/nodedotjs.svg" alt="Node.js" /><span>Node.js</span></div>
+      <div class="home-marquee-item"><img src="./logos/express.svg" alt="Express" /><span>Express</span></div>
+      <div class="home-marquee-item"><img src="./logos/nestjs.svg" alt="NestJS" /><span>NestJS</span></div>
     </div>
     <div class="home-marquee-group" aria-hidden="true">
-      <div class="home-marquee-item"><img src="/logos/javascript.svg" alt="" /><span>JavaScript</span></div>
-      <div class="home-marquee-item"><img src="/logos/typescript.svg" alt="" /><span>TypeScript</span></div>
-      <div class="home-marquee-item"><img src="/logos/nodedotjs.svg" alt="" /><span>Node.js</span></div>
-      <div class="home-marquee-item"><img src="/logos/express.svg" alt="" /><span>Express</span></div>
-      <div class="home-marquee-item"><img src="/logos/nestjs.svg" alt="" /><span>NestJS</span></div>
+      <div class="home-marquee-item"><img src="./logos/javascript.svg" alt="" /><span>JavaScript</span></div>
+      <div class="home-marquee-item"><img src="./logos/typescript.svg" alt="" /><span>TypeScript</span></div>
+      <div class="home-marquee-item"><img src="./logos/nodedotjs.svg" alt="" /><span>Node.js</span></div>
+      <div class="home-marquee-item"><img src="./logos/express.svg" alt="" /><span>Express</span></div>
+      <div class="home-marquee-item"><img src="./logos/nestjs.svg" alt="" /><span>NestJS</span></div>
     </div>
   </div>
 </div>
 
 <div class="home-feature-grid">
   <div class="home-feature-card">
-    <img src="/icons/route.svg" alt="" />
+    <img src="./icons/route.svg" alt="" />
     <div><strong>Urut, bukan acak</strong><p>Delapan tahap dari JavaScript fundamental sampai TypeScript backend.</p></div>
   </div>
   <div class="home-feature-card">
-    <img src="/icons/code-2.svg" alt="" />
+    <img src="./icons/code-2.svg" alt="" />
     <div><strong>Kode yang bisa dicoba</strong><p>Contoh bernomor baris dan mini penerapan yang bisa langsung dijalankan.</p></div>
   </div>
   <div class="home-feature-card">
-    <img src="/icons/check-check.svg" alt="" />
+    <img src="./icons/check-check.svg" alt="" />
     <div><strong>Ada checkpoint</strong><p>Latihan dan checklist agar belajar tidak berhenti di membaca.</p></div>
   </div>
 </div>
