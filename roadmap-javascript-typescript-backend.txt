@@ -1,0 +1,809 @@
+ROADMAP BELAJAR JAVASCRIPT & TYPESCRIPT
+FOKUS: FUNDAMENTAL BAHASA UNTUK BACKEND NODE.JS & EXPRESS
+
+TUJUAN UTAMA
+Memahami JavaScript dan TypeScript dengan kuat sebelum menggunakannya untuk membangun backend menggunakan Node.js dan Express.
+
+Fokus roadmap ini adalah fundamental bahasa, cara kerja JavaScript, pengelolaan data, function, module, asynchronous programming, serta sistem tipe TypeScript.
+
+KONSEP DATABASE, SQL, RELASI, MIGRATION, ORM, DAN CRUD DATABASE TIDAK DIBAHAS ULANG karena sudah dipelajari melalui PHP dan Laravel.
+
+==================================================
+BATASAN DAN ARAH BELAJAR
+==================================================
+
+FOKUS:
+- JavaScript modern (ES6+).
+- Fundamental bahasa yang sering digunakan dalam backend.
+- Asynchronous JavaScript dan event loop.
+- Module system.
+- TypeScript fundamental hingga intermediate.
+- TypeScript untuk function, object, data, dan asynchronous code.
+- Memahami bagaimana JavaScript/TypeScript dijalankan oleh Node.js.
+
+TIDAK MENJADI FOKUS:
+- HTML, CSS, DOM, dan manipulasi browser.
+- React, Vue, Angular, dan framework frontend.
+- Tailwind CSS.
+- SQL dan desain database.
+- ORM seperti Prisma atau Sequelize.
+- Migration, relasi tabel, dan query database.
+- Materi Express secara mendalam.
+- Authentication dan deployment.
+
+Catatan:
+Materi HTTP, JSON, fetch, environment variable, dan Node.js hanya disentuh ketika diperlukan untuk memahami penggunaan JavaScript/TypeScript di lingkungan backend.
+
+==================================================
+TAHAP 1 — JAVASCRIPT FUNDAMENTAL
+==================================================
+
+TUJUAN:
+Memahami syntax dasar, tipe data, operator, dan alur eksekusi program JavaScript.
+
+A. Dasar Bahasa
+[ ] Apa itu JavaScript
+[ ] JavaScript sebagai dynamically typed language
+[ ] let, const, dan var
+[ ] Primitive data types
+[ ] String
+[ ] Number
+[ ] Boolean
+[ ] Null dan undefined
+[ ] Symbol dan BigInt (pengenalan)
+[ ] typeof
+[ ] Type coercion
+[ ] Truthy dan falsy
+[ ] Perbedaan null dan undefined
+[ ] Perbedaan == dan ===
+
+B. Operator dan Control Flow
+[ ] Arithmetic operators
+[ ] Assignment operators
+[ ] Comparison operators
+[ ] Logical operators
+[ ] Nullish coalescing (??)
+[ ] Optional chaining (?.)
+[ ] Ternary operator
+[ ] if, else if, else
+[ ] switch
+[ ] for
+[ ] while dan do...while
+[ ] for...of
+[ ] break dan continue
+
+C. String dan Number
+[ ] Template literals
+[ ] String methods yang umum digunakan
+[ ] Number methods
+[ ] parseInt() dan parseFloat()
+[ ] Number.isNaN()
+[ ] Math object
+[ ] Konversi tipe data
+
+D. Array
+[ ] Membuat dan mengakses array
+[ ] Menambah dan menghapus elemen
+[ ] Index dan length
+[ ] forEach()
+[ ] map()
+[ ] filter()
+[ ] find() dan findIndex()
+[ ] some() dan every()
+[ ] reduce()
+[ ] sort()
+[ ] includes()
+[ ] slice() dan splice()
+[ ] Destructuring array
+[ ] Spread operator
+[ ] Array of objects
+[ ] Method chaining
+
+E. Object
+[ ] Membuat object
+[ ] Property dan value
+[ ] Mengakses property (dot dan bracket notation)
+[ ] Menambah, mengubah, dan menghapus property
+[ ] Nested object
+[ ] Object destructuring
+[ ] Default value pada destructuring
+[ ] Spread operator
+[ ] Shorthand property
+[ ] Computed property name
+[ ] Optional chaining
+[ ] Object.keys()
+[ ] Object.values()
+[ ] Object.entries()
+[ ] Object.assign()
+[ ] Perbedaan referensi object dan primitive value
+
+TARGET:
+Bisa membuat program sederhana, mengolah array of objects, membaca data bertingkat, serta memahami cara JavaScript menyimpan dan mengakses data.
+
+LATIHAN:
+[ ] Program pengelolaan daftar produk menggunakan array dan object.
+[ ] Search dan filter data.
+[ ] Mengelompokkan dan menghitung data menggunakan reduce().
+[ ] Mengubah struktur data dari satu bentuk ke bentuk lain.
+
+REFERENSI:
+MDN JavaScript Guide:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+JavaScript.info:
+https://javascript.info/
+
+==================================================
+TAHAP 2 — FUNCTION, SCOPE, DAN CARA KERJA JAVASCRIPT
+==================================================
+
+TUJUAN:
+Memahami function sebagai bagian penting dalam menyusun logic aplikasi backend.
+
+A. Function
+[ ] Function declaration
+[ ] Function expression
+[ ] Arrow function
+[ ] Parameter dan argument
+[ ] Default parameter
+[ ] Return value
+[ ] Rest parameter
+[ ] Callback function
+[ ] Higher-order function
+[ ] Pure function secara konsep
+[ ] Function sebagai first-class citizen
+
+B. Scope dan Closure
+[ ] Global scope
+[ ] Function scope
+[ ] Block scope
+[ ] Lexical scope
+[ ] Scope chain
+[ ] Hoisting
+[ ] Perbedaan hoisting var, let, dan const
+[ ] Temporal Dead Zone (TDZ)
+[ ] Closure
+[ ] Penggunaan closure dalam function
+
+C. This dan Object Behavior
+[ ] Keyword this
+[ ] Cara penentuan nilai this
+[ ] this pada regular function
+[ ] this pada arrow function
+[ ] call(), apply(), dan bind()
+[ ] Method pada object
+[ ] Constructor function (pengenalan)
+
+D. Prototype dan Class
+[ ] Apa itu prototype
+[ ] Prototype chain
+[ ] Inheritance melalui prototype (konsep)
+[ ] Object.create()
+[ ] Class
+[ ] Constructor
+[ ] Instance
+[ ] Method
+[ ] Static method
+[ ] extends dan super
+[ ] Encapsulation dasar
+[ ] Perbedaan class dan object
+
+E. Error Handling
+[ ] Apa itu error
+[ ] Syntax error
+[ ] Reference error
+[ ] Type error
+[ ] throw
+[ ] try dan catch
+[ ] finally
+[ ] Membuat custom Error
+[ ] Error.message dan Error.stack
+[ ] Melempar ulang error (rethrow)
+
+TARGET:
+Bisa membagi program menjadi function yang terstruktur, memahami scope dan closure, serta menangani error dengan benar.
+
+LATIHAN:
+[ ] Membuat function untuk validasi data sederhana.
+[ ] Membuat modul pengelolaan produk menggunakan beberapa function.
+[ ] Membuat custom error untuk kondisi input yang tidak valid.
+[ ] Membuat counter atau function factory sederhana untuk memahami closure.
+
+REFERENSI:
+JavaScript.info — Functions:
+https://javascript.info/functions
+
+JavaScript.info — Object:
+https://javascript.info/object
+
+MDN — Functions:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
+==================================================
+TAHAP 3 — MODERN JAVASCRIPT DAN MODULE SYSTEM
+==================================================
+
+TUJUAN:
+Memahami fitur JavaScript modern dan cara memisahkan kode ke beberapa file. Ini penting karena project Node.js umumnya terdiri dari banyak module.
+
+A. Modern JavaScript
+[ ] let dan const dalam praktik
+[ ] Template literals
+[ ] Destructuring
+[ ] Spread operator
+[ ] Rest parameter
+[ ] Optional chaining
+[ ] Nullish coalescing
+[ ] Default parameter
+[ ] Enhanced object literals
+[ ] Computed property
+[ ] Object dan array immutability secara konsep
+
+B. Module System
+[ ] Apa itu module
+[ ] Kenapa kode perlu dipisah menjadi module
+[ ] export
+[ ] import
+[ ] Named export
+[ ] Default export
+[ ] Import alias
+[ ] Re-export
+[ ] Module scope
+[ ] Perbedaan named export dan default export
+[ ] ES Modules (ESM)
+[ ] CommonJS (CJS)
+[ ] require() dan module.exports
+[ ] Perbedaan ESM dan CommonJS
+[ ] Gambaran module resolution di Node.js
+
+C. Package dan Dependency (Pengenalan)
+[ ] Apa itu package
+[ ] Apa itu dependency
+[ ] Library dan package pihak ketiga
+[ ] package.json secara umum
+[ ] npm secara pengenalan
+[ ] Memahami perbedaan dependency dan devDependency
+[ ] Memahami cara membaca dokumentasi package
+
+TARGET:
+Bisa menyusun program JavaScript dalam beberapa file, melakukan import/export, dan memahami module yang nantinya digunakan oleh Node.js.
+
+LATIHAN:
+[ ] Membuat project JavaScript kecil dengan beberapa module.
+[ ] Memisahkan data, function, dan logic ke file berbeda.
+[ ] Menggunakan named export dan default export.
+[ ] Mencoba membaca project sederhana yang menggunakan ESM.
+
+REFERENSI:
+MDN — JavaScript Modules:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+Node.js — ECMAScript Modules:
+https://nodejs.org/api/esm.html
+
+==================================================
+TAHAP 4 — ASYNCHRONOUS JAVASCRIPT
+==================================================
+
+TUJUAN:
+Memahami asynchronous programming karena backend sering menjalankan operasi yang membutuhkan waktu, seperti membaca file, mengakses API, dan berkomunikasi dengan layanan lain.
+
+A. Synchronous dan Asynchronous
+[ ] Synchronous code
+[ ] Asynchronous code
+[ ] Blocking dan non-blocking secara konsep
+[ ] Call stack
+[ ] Web API sebagai konteks browser (pengenalan saja)
+[ ] Callback queue
+[ ] Event loop
+[ ] Microtask queue
+[ ] Macrotask/task queue
+[ ] Urutan eksekusi asynchronous code
+
+B. Callback
+[ ] Apa itu callback
+[ ] Callback function
+[ ] Callback asynchronous
+[ ] Callback hell
+[ ] Error-first callback (pengenalan dari ekosistem Node.js)
+
+C. Promise
+[ ] Apa itu Promise
+[ ] Pending, fulfilled, dan rejected
+[ ] Membuat Promise
+[ ] resolve() dan reject()
+[ ] then()
+[ ] catch()
+[ ] finally()
+[ ] Promise chaining
+[ ] Promise.all()
+[ ] Promise.allSettled()
+[ ] Promise.race()
+[ ] Promise.any()
+[ ] Menangani rejection
+
+D. Async/Await
+[ ] Apa itu async function
+[ ] await
+[ ] Return value dari async function
+[ ] Error handling dengan try/catch
+[ ] Menjalankan beberapa Promise secara paralel
+[ ] Perbedaan await berurutan dan Promise.all()
+[ ] Menangani error pada asynchronous function
+
+E. API dan JSON
+[ ] Apa itu JSON
+[ ] JSON.stringify()
+[ ] JSON.parse()
+[ ] Perbedaan object JavaScript dan JSON
+[ ] fetch() sebagai API untuk HTTP request
+[ ] GET dan POST request dasar
+[ ] Membaca response JSON
+[ ] Menangani HTTP error response
+[ ] Memahami bahwa fetch tersedia di Node.js modern
+
+TARGET:
+Memahami alur asynchronous JavaScript, mampu menggunakan Promise dan async/await, serta tidak bingung membaca kode asynchronous yang umum ditemukan di backend.
+
+LATIHAN:
+[ ] Mengambil data dari public REST API menggunakan fetch().
+[ ] Mengolah response JSON.
+[ ] Membuat beberapa function asynchronous.
+[ ] Menangani kondisi request gagal.
+[ ] Membandingkan eksekusi Promise secara berurutan dan paralel.
+
+REFERENSI:
+JavaScript.info — Promises:
+https://javascript.info/promise-basics
+
+JavaScript.info — Async/Await:
+https://javascript.info/async-await
+
+MDN — Promise:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+MDN — Event Loop:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
+
+==================================================
+TAHAP 5 — JAVASCRIPT YANG RELEVAN UNTUK NODE.JS
+==================================================
+
+TUJUAN:
+Menghubungkan pemahaman JavaScript dengan lingkungan runtime Node.js tanpa masuk terlalu jauh ke materi framework Express.
+
+A. JavaScript di Node.js
+[ ] Perbedaan JavaScript di browser dan Node.js
+[ ] Apa itu runtime
+[ ] Gambaran V8 Engine
+[ ] Peran Node.js runtime
+[ ] Global object di Node.js
+[ ] globalThis
+[ ] process
+[ ] process.env
+[ ] process.argv
+[ ] Buffer (pengenalan)
+[ ] EventEmitter (pengenalan)
+[ ] Event-driven programming secara konsep
+
+B. Operasi yang Umum di Backend
+[ ] Membaca dokumentasi API Node.js
+[ ] Membaca dan menulis file secara asynchronous (pengenalan fs)
+[ ] Memahami path file (pengenalan path)
+[ ] Memahami environment variable
+[ ] Memahami penggunaan package eksternal
+[ ] Memahami error dari operasi asynchronous
+[ ] Memahami dasar HTTP request dan response
+[ ] Memahami penggunaan JSON sebagai format pertukaran data
+
+C. Runtime dan Asynchronous I/O
+[ ] Peran event loop di Node.js
+[ ] Non-blocking I/O secara konsep
+[ ] Mengapa operasi I/O umumnya asynchronous
+[ ] Memahami bahwa JavaScript menjalankan callback pada event loop
+[ ] Perbedaan concurrency dan parallelism secara konsep
+
+CATATAN:
+Tahap ini bukan pembelajaran Node.js secara menyeluruh. Tujuannya hanya memahami lingkungan tempat JavaScript backend berjalan. Detail npm, konfigurasi project, HTTP server, dan Express dapat dipelajari setelah fundamental bahasa cukup kuat.
+
+TARGET:
+Memahami kode JavaScript yang berjalan di Node.js, mengenali API bawaan yang sering ditemui, dan memahami alasan asynchronous programming penting di backend.
+
+REFERENSI:
+Node.js Learn:
+https://nodejs.org/learn
+
+Node.js API Documentation:
+https://nodejs.org/api/
+
+==================================================
+TAHAP 6 — TYPESCRIPT FUNDAMENTAL
+==================================================
+
+TUJUAN:
+Memahami TypeScript sebagai superset JavaScript yang menambahkan static type system. TypeScript digunakan untuk membantu mendeteksi kesalahan tipe sebelum program dijalankan.
+
+Prasyarat:
+JavaScript fundamental, function, object, module, dan asynchronous programming sudah dipahami.
+
+A. Pengenalan TypeScript
+[ ] Apa itu TypeScript
+[ ] Hubungan TypeScript dan JavaScript
+[ ] Static type checking
+[ ] Compile-time dan runtime
+[ ] TypeScript bukan pengganti JavaScript runtime
+[ ] Proses transpilation
+[ ] Type inference
+[ ] Type annotation
+[ ] Membaca error TypeScript
+
+B. Basic Types
+[ ] string
+[ ] number
+[ ] boolean
+[ ] array
+[ ] object
+[ ] null
+[ ] undefined
+[ ] any
+[ ] unknown
+[ ] void
+[ ] never
+[ ] Literal types
+[ ] Tuple
+[ ] Enum (pengenalan)
+[ ] Alternatif enum menggunakan union
+
+C. Variable dan Function Typing
+[ ] Type annotation pada variable
+[ ] Type inference pada variable
+[ ] Typing parameter function
+[ ] Return type function
+[ ] Optional parameter
+[ ] Default parameter
+[ ] Rest parameter
+[ ] Function type
+[ ] Callback typing
+[ ] Typing arrow function
+[ ] Function overload (pengenalan)
+
+D. Object Typing
+[ ] Object type
+[ ] Type alias
+[ ] Interface
+[ ] Optional property
+[ ] Readonly property
+[ ] Index signature
+[ ] Nested object type
+[ ] Array of objects
+[ ] Perbedaan type dan interface
+[ ] Extending interface
+[ ] Intersection type
+
+E. Union dan Type Narrowing
+[ ] Union type
+[ ] Intersection type
+[ ] Literal union
+[ ] typeof narrowing
+[ ] Equality narrowing
+[ ] in operator
+[ ] instanceof
+[ ] Type guards
+[ ] Discriminated union
+[ ] Type assertion
+[ ] Non-null assertion (pahami risikonya)
+
+F. Generic
+[ ] Apa itu generic
+[ ] Generic function
+[ ] Generic type
+[ ] Generic interface
+[ ] Generic constraints
+[ ] Generic pada array
+[ ] Memahami kapan generic diperlukan
+[ ] Membaca generic dari library pihak ketiga
+
+G. Utility Types
+[ ] Partial<T>
+[ ] Required<T>
+[ ] Readonly<T>
+[ ] Pick<T, K>
+[ ] Omit<T, K>
+[ ] Record<K, T>
+[ ] Exclude<T, U>
+[ ] Extract<T, U>
+[ ] ReturnType<T>
+[ ] Parameters<T>
+[ ] Awaited<T>
+
+H. Fitur TypeScript Tambahan
+[ ] keyof
+[ ] typeof dalam konteks TypeScript
+[ ] Indexed access types
+[ ] Type alias composition
+[ ] satisfies operator
+[ ] Perbedaan interface dan type dalam penggunaan umum
+[ ] Memahami tipe dari package pihak ketiga
+[ ] Memahami file declaration (.d.ts) secara pengenalan
+
+TARGET:
+Bisa membuat type untuk variable, function, object, array, dan data yang kompleks. Mampu membaca error TypeScript serta memahami generic dan utility types yang sering digunakan dalam project.
+
+LATIHAN:
+[ ] Membuat type User, Product, dan Order.
+[ ] Membuat function dengan parameter dan return type.
+[ ] Membuat function generic sederhana.
+[ ] Menggunakan Pick, Omit, Partial, dan Record.
+[ ] Membuat fungsi yang menerima beberapa kemungkinan tipe data menggunakan union.
+[ ] Membuat struktur response API dengan TypeScript.
+
+REFERENSI:
+TypeScript Handbook:
+https://www.typescriptlang.org/docs/handbook/intro.html
+
+TypeScript for JavaScript Programmers:
+https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+
+TypeScript Playground:
+https://www.typescriptlang.org/play
+
+==================================================
+TAHAP 7 — TYPESCRIPT UNTUK BACKEND
+==================================================
+
+TUJUAN:
+Menerapkan TypeScript pada pola kode yang nantinya sering digunakan ketika membangun backend dengan Node.js dan Express.
+
+A. Typing Data dan Function
+[ ] Membuat type untuk data aplikasi
+[ ] Membuat interface untuk object
+[ ] Membuat type untuk function
+[ ] Membuat type untuk callback
+[ ] Menggunakan optional property
+[ ] Menggunakan union untuk status
+[ ] Menggunakan generic untuk response atau helper
+[ ] Memahami readonly dan immutability
+[ ] Menghindari penggunaan any tanpa alasan
+
+B. Typing Asynchronous Code
+[ ] Promise<T>
+[ ] Return type async function
+[ ] Promise<void>
+[ ] Promise.all() dengan TypeScript
+[ ] Menangani unknown pada catch
+[ ] Typing hasil fetch/API
+[ ] Memahami bahwa data dari luar belum otomatis aman hanya karena diberi type
+
+C. Type dan Validasi Data
+[ ] Perbedaan TypeScript type dengan validasi runtime
+[ ] Memahami bahwa type akan hilang saat runtime
+[ ] Memahami data dari request sebagai input yang belum tepercaya
+[ ] Pengenalan schema validation
+[ ] Hubungan type dengan library validasi seperti Zod
+[ ] Memahami inferensi type dari schema (pengenalan)
+
+D. TypeScript dan Node.js
+[ ] Menggunakan TypeScript bersama Node.js
+[ ] Memahami tsconfig.json
+[ ] target dan module
+[ ] moduleResolution
+[ ] strict
+[ ] noImplicitAny
+[ ] strictNullChecks
+[ ] esModuleInterop (pengenalan)
+[ ] @types/node
+[ ] Type declaration dari package
+[ ] Menjalankan TypeScript saat development
+[ ] Build TypeScript menjadi JavaScript
+[ ] Perbedaan development runtime dan production build
+
+E. Gambaran Penggunaan di Express
+[ ] Memahami bahwa Express memiliki type untuk Request dan Response
+[ ] Pengenalan typing Request
+[ ] Pengenalan typing Response
+[ ] Pengenalan typing middleware
+[ ] Pengenalan typing controller
+[ ] Memahami type untuk parameter route dan request body
+[ ] Memahami bahwa type request tidak menggantikan validasi input runtime
+
+Catatan:
+Bagian Express hanya berupa pengenalan konteks. Pembahasan routing, middleware, controller, dan pembuatan API dilakukan pada tahap belajar Express, bukan dalam roadmap fundamental ini.
+
+TARGET:
+Bisa menulis kode TypeScript yang siap diterapkan pada project Node.js/Express, memahami konfigurasi TypeScript, dan membuat type yang masuk akal untuk kebutuhan backend.
+
+LATIHAN:
+[ ] Membuat program Node.js sederhana menggunakan TypeScript.
+[ ] Memisahkan kode ke beberapa module.
+[ ] Membuat type untuk data aplikasi.
+[ ] Membuat function asynchronous dengan return type yang tepat.
+[ ] Menggunakan strict mode dan memperbaiki error type.
+[ ] Membuat helper untuk membentuk response data.
+
+REFERENSI:
+TypeScript — tsconfig:
+https://www.typescriptlang.org/tsconfig/
+
+TypeScript — Modules:
+https://www.typescriptlang.org/docs/handbook/modules/introduction.html
+
+DefinitelyTyped:
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+==================================================
+TAHAP 8 — PRAKTIK DAN CHECKPOINT AKHIR
+==================================================
+
+PROJECT LATIHAN 1 — JAVASCRIPT DATA MANAGER
+
+Fokus:
+- Variable dan tipe data.
+- Array dan object.
+- Function.
+- Array methods.
+- Destructuring dan spread.
+- Module.
+
+Fitur:
+[ ] Menyimpan kumpulan data dalam array of objects.
+[ ] Menampilkan seluruh data.
+[ ] Menambahkan data.
+[ ] Mengubah data.
+[ ] Menghapus data.
+[ ] Search dan filter.
+[ ] Menghitung ringkasan data menggunakan reduce().
+[ ] Memisahkan kode ke beberapa module.
+
+PROJECT LATIHAN 2 — ASYNC API CONSUMER
+
+Fokus:
+- Promise.
+- Async/await.
+- Fetch.
+- JSON.
+- Error handling.
+
+Fitur:
+[ ] Mengambil data dari public API.
+[ ] Menampilkan data yang diterima.
+[ ] Mengolah response.
+[ ] Membuat pencarian data.
+[ ] Menangani loading dan error melalui alur program.
+[ ] Menggunakan Promise.all() untuk beberapa request.
+
+PROJECT LATIHAN 3 — TYPESCRIPT MINI APPLICATION
+
+Fokus:
+- Type alias dan interface.
+- Function typing.
+- Union dan narrowing.
+- Generic.
+- Utility types.
+- Module.
+- Async/await.
+
+Fitur:
+[ ] Membuat type untuk beberapa entity.
+[ ] Membuat function dengan type yang jelas.
+[ ] Membuat generic helper.
+[ ] Mengolah array of objects.
+[ ] Membuat response type.
+[ ] Mengambil data API.
+[ ] Menangani error dengan aman.
+[ ] Mengaktifkan strict mode.
+
+CHECKPOINT PEMAHAMAN
+
+CHECKPOINT 1 — JAVASCRIPT BASIC
+[ ] Memahami tipe data dan operator.
+[ ] Memahami control flow.
+[ ] Bisa mengolah string, array, dan object.
+[ ] Memahami perbedaan primitive dan reference value.
+
+CHECKPOINT 2 — FUNCTION DAN OBJECT
+[ ] Memahami function dan callback.
+[ ] Memahami scope, hoisting, dan closure.
+[ ] Memahami this.
+[ ] Memahami prototype dan class.
+[ ] Bisa menangani error.
+
+CHECKPOINT 3 — MODERN JAVASCRIPT
+[ ] Memahami destructuring dan spread.
+[ ] Memahami import/export.
+[ ] Memahami ESM dan CommonJS.
+[ ] Bisa memisahkan kode ke beberapa module.
+
+CHECKPOINT 4 — ASYNCHRONOUS JAVASCRIPT
+[ ] Memahami Promise.
+[ ] Bisa menggunakan async/await.
+[ ] Memahami event loop secara dasar.
+[ ] Bisa menangani asynchronous error.
+[ ] Bisa mengambil dan mengolah data dari API.
+
+CHECKPOINT 5 — TYPESCRIPT FUNDAMENTAL
+[ ] Memahami type inference dan annotation.
+[ ] Bisa membuat type untuk variable, function, dan object.
+[ ] Memahami union dan narrowing.
+[ ] Memahami generic.
+[ ] Bisa menggunakan utility types.
+
+CHECKPOINT 6 — TYPESCRIPT UNTUK NODE.JS
+[ ] Memahami konfigurasi tsconfig.
+[ ] Memahami type declaration.
+[ ] Bisa menggunakan TypeScript dalam project Node.js sederhana.
+[ ] Bisa mengetik asynchronous function.
+[ ] Memahami batasan static typing dan kebutuhan validasi runtime.
+[ ] Siap membaca dan menulis kode TypeScript pada project Express.
+
+==================================================
+URUTAN BELAJAR
+==================================================
+
+JavaScript Fundamental
+        |
+        v
+Function, Scope, dan Cara Kerja JavaScript
+        |
+        v
+Modern JavaScript dan Module System
+        |
+        v
+Asynchronous JavaScript
+        |
+        v
+JavaScript yang Relevan untuk Node.js
+        |
+        v
+TypeScript Fundamental
+        |
+        v
+TypeScript untuk Backend
+        |
+        v
+Mini Project dan Checkpoint
+        |
+        v
+MULAI BELAJAR NODE.JS DAN EXPRESS
+
+==================================================
+PRINSIP BELAJAR
+==================================================
+
+1. Jangan menghafal syntax tanpa memahami cara kerjanya.
+2. Utamakan memahami JavaScript sebelum masuk TypeScript.
+3. Jangan terburu-buru menggunakan TypeScript jika konsep JavaScript belum kuat.
+4. Biasakan membaca dokumentasi resmi.
+5. Praktikkan setiap materi dengan kode kecil.
+6. Pahami array dan object dengan baik karena sangat sering digunakan untuk mengolah data.
+7. Beri perhatian khusus pada function, scope, closure, dan asynchronous programming.
+8. Pahami Promise dan async/await, jangan hanya menyalin syntax.
+9. Biasakan menggunakan module agar kode tidak menumpuk dalam satu file.
+10. Gunakan TypeScript strict mode ketika sudah mulai praktik TypeScript.
+11. Hindari any jika tipe yang lebih aman bisa digunakan.
+12. Ingat bahwa TypeScript hanya memeriksa tipe saat development/compile-time; validasi data dari luar tetap diperlukan saat runtime.
+13. Tidak perlu mengulang materi database dan ORM yang sudah dikuasai.
+14. Jangan masuk ke banyak framework sebelum fundamental bahasa benar-benar dipahami.
+
+==================================================
+TARGET AKHIR
+==================================================
+
+Setelah menyelesaikan roadmap ini, diharapkan mampu:
+
+- Menulis JavaScript modern tanpa bergantung pada framework.
+- Memahami cara kerja function, object, scope, closure, dan class.
+- Mengolah array dan object dengan berbagai method.
+- Memahami module system dan pengorganisasian kode.
+- Menguasai Promise, async/await, dan asynchronous programming.
+- Memahami dasar event loop dan runtime Node.js.
+- Menulis TypeScript dengan type yang tepat.
+- Menggunakan union, narrowing, generic, dan utility types.
+- Memahami konfigurasi TypeScript untuk Node.js.
+- Memahami perbedaan static type checking dan runtime validation.
+- Membaca serta memahami kode TypeScript yang digunakan dalam project backend.
+
+JALUR BERIKUTNYA:
+Setelah roadmap ini selesai, lanjutkan ke Node.js Fundamental dan Express.js menggunakan TypeScript.
+
+Catatan akhir:
+Roadmap ini sengaja tidak memasukkan pembelajaran SQL, PostgreSQL, ORM, migration, dan konsep relasi database. Pengetahuan yang sudah diperoleh melalui PHP dan Laravel dapat langsung digunakan kembali ketika nanti membangun backend dengan Node.js dan Express.
